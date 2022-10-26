@@ -37,7 +37,7 @@ const Yoga = () => {
         <h3 className={styles.modalidad__title}>Empresas</h3>
         <p className={styles.modalidad__text}>Presencial y online. Ideal para que las personas de tu equipo se sientan más productivas, creativas, con más energías y bienestar.</p>
       </div>
-      <h3 className={styles.subTitle2}>¿Qué resultados conseguirás con mis clases?</h3>
+      <h3 className={styles.subTitle2}>¿Qué resultados conseguirás <br /> con mis clases?</h3>
       <p className={styles.text}>Te sentirás con las energías renovadas, conectada contigo misma y en calma.<br />A nivel físico tendrás menos rigidez, sentirás menos contracturas musculares en el cuello y espalda al pasar tantas horas sentadas enfrente del ordenador.<br />Además ganarás poco a poco flexibilidad y así podrás expandir tu cuerpo y podrás gestionar mejor tus estados de ansiedad o estrés incluso tus emociones</p>
     </section>
   )

@@ -1,0 +1,29 @@
+@import 'colors';
+
+.text{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+  font-weight: 600;
+}
+
+
+.icons__container{
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 0;
+  font-size: 50px;
+  color: white;
+}
+
+.copyright{
+  margin-top: 20px;
+  font-size: 10px;
+  background-color: $darkGray;
+  padding: 5px 0;
+  text-align: center;
+  color: $white;
+}

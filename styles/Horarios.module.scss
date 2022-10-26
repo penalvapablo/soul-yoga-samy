@@ -1,0 +1,72 @@
+@import 'colors';
+
+.title{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: $white;
+  font-weight: bold;
+}
+
+.subTitle{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+  font-weight: 600;
+}
+
+.horarios__mobile{
+  background-color: $darkGray;
+  width: 260px;
+  padding: 20px;
+  margin:30px auto 30px;
+  display: flex;
+  flex-direction: column;
+  &__dia{
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    font-size: 18px;
+    color: $white;
+    margin: 0 auto 15px; 
+    font-weight: bold;
+  }
+  &__yoga{
+    font-size: 18px;
+    color: $white;
+    margin: 0 auto 15px; 
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__division{
+    height: 2px;
+    width: 250px;
+    background-color: #fff;
+    margin: 0 auto 20px; 
+  }
+}
+
+.horarios__info{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  &:last-child{
+    margin-bottom: 30px;
+  }
+  &__bullet{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-top: 2px;
+    background-color: #fff;
+  }
+  &__text{
+    color: $white;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}

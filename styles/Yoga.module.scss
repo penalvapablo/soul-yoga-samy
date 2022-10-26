@@ -1,9 +1,5 @@
 @import 'colors';
 
-.section{
-  background-color: $gray;
-}
-
 
 .title{
   margin-top: 30px;
@@ -23,7 +19,7 @@
 }
 
 .text{
-  font-size: 16px;
+  font-size: 18px;
   color: $white;
   width: 350px;
   margin: 20px auto 0;
@@ -59,7 +55,7 @@
     font-weight: bold;
   }
   &__text{
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 10px;
     color: $white;
     // width: 275px;
@@ -71,7 +67,7 @@
 .subTitle2{
   margin-top: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   color: $white;
   font-weight: 600;
