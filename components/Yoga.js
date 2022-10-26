@@ -23,8 +23,22 @@ const Yoga = () => {
       <h2 className={styles.title}>Modalidades</h2>
       <div className={styles.modalidad}>
         <h3 className={styles.modalidad__title}>Grupales</h3>
-        <p className={styles.modalidad__text}>Son grupos reducidos hasta 4 personas para crear un ambiente de práctica con armonía y cuidado</p>
+        <p className={styles.modalidad__text}>Son grupos reducidos hasta 4 personas para crear un ambiente de práctica con armonía y cuidado.</p>
       </div>
+      <div className={styles.modalidad}>
+        <h3 className={styles.modalidad__title}>Privadas</h3>
+        <p className={styles.modalidad__text}>Entre tu y yo. Ideal para empezar cuando tu prefieres.</p>
+      </div>
+      <div className={styles.modalidad}>
+        <h3 className={styles.modalidad__title}>Online</h3>
+        <p className={styles.modalidad__text}> Son clases en vivo privadas por medio de google meet.</p>
+      </div>
+      <div className={styles.modalidad}>
+        <h3 className={styles.modalidad__title}>Empresas</h3>
+        <p className={styles.modalidad__text}>Presencial y online. Ideal para que las personas de tu equipo se sientan más productivas, creativas, con más energías y bienestar.</p>
+      </div>
+      <h3 className={styles.subTitle2}>¿Qué resultados conseguirás con mis clases?</h3>
+      <p className={styles.text}>Te sentirás con las energías renovadas, conectada contigo misma y en calma.<br />A nivel físico tendrás menos rigidez, sentirás menos contracturas musculares en el cuello y espalda al pasar tantas horas sentadas enfrente del ordenador.<br />Además ganarás poco a poco flexibilidad y así podrás expandir tu cuerpo y podrás gestionar mejor tus estados de ansiedad o estrés incluso tus emociones</p>
     </section>
   )
 }

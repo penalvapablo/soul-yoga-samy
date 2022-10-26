@@ -1,7 +1,5 @@
 @import 'colors';
 
-@import 'colors';
-
 .section{
   background-color: $gray;
 }
@@ -18,10 +16,10 @@
 .subTitle{
   margin-top: 20px;
   text-align: center;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
   color: $white;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .text{
@@ -29,6 +27,9 @@
   color: $white;
   width: 350px;
   margin: 20px auto 0;
+  &:last-child{
+    margin-bottom: 20px;
+  }
 }
 
 .img{
@@ -44,12 +45,12 @@
 .modalidad{
   background-color: $darkGray;
   width: 260px;
-  height: 110px;
+  // height: 130px;
   margin: 40px auto 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: space-between;
   &__title{
     text-align: center;
     font-size: 20px;
@@ -61,9 +62,18 @@
     font-size: 16px;
     padding-top: 10px;
     color: $white;
-    width: 275px;
+    // width: 275px;
     text-align: center;
     margin: 0 auto;
-  }
+  }  
+}
+
+.subTitle2{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+  font-weight: 600;
 }
 
