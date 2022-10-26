@@ -1,0 +1,8 @@
+@import 'colors';
+
+.nav{
+  background-color: $darkGray;
+  & ul{
+    margin: 0;
+  }
+}
