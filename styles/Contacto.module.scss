@@ -3,9 +3,9 @@
 .text{
   margin-top: 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
-  color: $white;
+  color: $black;
   font-weight: 600;
 }
 
@@ -16,7 +16,10 @@
   justify-content: space-between;
   margin: 20px auto 0;
   font-size: 50px;
-  color: white;
+  color: $black;
+  & a {
+    color: $black;
+  }
 }
 
 .copyright{
@@ -25,5 +28,46 @@
   background-color: $darkGray;
   padding: 5px 0;
   text-align: center;
-  color: $white;
+  color: $black;
+}
+
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:300px;
+  width:325px;
+  margin: 0 auto;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:300px;
+  width:325px;
+}
+
+@media screen and (min-width: 700px){
+  .contacto__container{
+    display: flex;
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mapouter{
+    margin: 0;
+  }
+  .contacto__info__container{
+    height: 225px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 800px){
+  .contacto__container{
+    width: 80%;
+  }
 }

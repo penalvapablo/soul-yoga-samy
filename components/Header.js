@@ -2,33 +2,77 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import styles from '../styles/Header.module.scss'
-import MobileNav from './Nav'
+import MobileNav from './MobileNav'
 import logo from '../public/logo-mobile.png'
-import bg from '../public/hero2.png'
+import bgMobile from '../public/hero2.png'
+import bgDesktop from '../public/Desktop-bg.png'
 import Image from 'next/image'
+import { RemoveScroll } from 'react-remove-scroll';
+import Link from 'next/link'
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 
 const Header = () => {
-  const [mobileNav, setMobileNav] = useState('off')
+  const [mobileNav, setMobileNav] = useState(false)
+  console.log(mobileNav)
+  const mobileNavFn = () => {
+    setMobileNav(!mobileNav)
+  }
+  if (typeof window !== "undefined") {
+    mobileNav ? document.body.style.overflow = "hidden" : document.body.style.overflow = 'auto'
+  }
+
+
   return (
 
     <header className={styles.header}>
-      <div className={styles.bg_image_container}>
-        <Image src={bg} alt='Samy Yoga' layout='fill' objectFit='cover' objectPosition='45% 55%' quality={100} />
+      <div className={`${styles.mobileNav__container} ${mobileNav && styles.mobileNav__container__active}`}>
+        <MobileNav mobileNavFn={mobileNavFn} />
+      </div>
+
+      <div className={styles.bg_image_mobile_container}>
+        <Image src={bgMobile} alt='Samy Yoga' layout='fill' objectFit='cover' objectPosition='45% 55%' quality={100} />
+      </div>
+      <div className={styles.bg_image_desktop_container}>
+        <Image src={bgDesktop} alt='Samy Yoga' layout='fill' objectFit='cover' quality={100} />
       </div>
       <div className={styles.top}>
-        <FontAwesomeIcon icon={faBars} className={styles.burger} />
-        <Image src={logo} alt='logo' width={215} height={71} />
+        <button className={styles.burgerBtn} onClick={mobileNavFn}>
+          <FontAwesomeIcon icon={faBars} className={styles.burger} />
+        </button>
+        <div className={styles.logoContainer}>
+          <Image src={logo} alt='logo' layout='responsive' />
+        </div>
+        <nav className={styles.nav}>
+          <ul className={styles.nav__list}>
+            <li><Link href={'#Home'}><a onClick={mobileNavFn}>Home</a></Link></li>
+            <li><Link href={'#QuienSoy'}><a onClick={mobileNavFn}>Quien Soy</a></Link></li>
+            <li><Link href={'#Yoga'}><a onClick={mobileNavFn}>Yoga</a></Link></li>
+            <li><Link href={'#Horarios'}><a onClick={mobileNavFn}>Horarios</a></Link></li>
+            <li><Link href={'#Tarifas'}><a onClick={mobileNavFn}>Tarifas</a></Link></li>
+            <li><Link href={'#Meditacion'}><a onClick={mobileNavFn}>Meditación</a></Link></li>
+            <li><Link href={'#Contacto'}><a onClick={mobileNavFn}>Contacto</a></Link></li>
+            <div className={styles.nav__socialLinks}>
+              <a href='https://wa.link/ugftpv' rel='noreferrer' target="_blank">
+                <FontAwesomeIcon icon={faWhatsapp} className={styles.nav__socialLinks__item} />
+              </a>
+              <a href='https://www.instagram.com/soulyogasamy' rel='noreferrer' target={'_blank'}>
+                <FontAwesomeIcon icon={faInstagram} className={styles.nav__socialLinks__item} />
+              </a>
+            </div>
+          </ul>
+        </nav>
       </div>
       <div className={styles.text_container}>
         <p className={styles.text}>
           Bienvenida
         </p>
         <h1 className={styles.text}>
-          Clase de yoga presenciales y online
+          Clase de yoga <br /> presenciales y online
         </h1>
+        <p className={styles.text__desktop}>El yoga es la oportunidad perfecta <br /> para ser curioso sobre quien eres</p>
+        <p className={styles.text__desktop}>J. Crandell</p>
       </div>
-
     </header>
 
   )

@@ -1,10 +1,10 @@
 @import 'colors';
 
 .title{
-  margin-top: 30px;
+  padding-top: 30px;
   text-align: center;
   font-size: 30px;
-  color: $white;
+  color: $black;
   font-weight: bold;
 }
 
@@ -22,30 +22,30 @@
       text-align: center;
       font-size: 20px;
       line-height: 22px;
-      color: $white;
+      color: $black;
       font-weight: 600;
     }
     &__subTitle{
-      color: $white;
+      color: $black;
       margin: 0 auto;
       margin-bottom: 20px;
     }
     &__clases{
-      color: $white;
+      color: $black;
       margin: 0 auto;
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 10px;
     }
     &__precio{
-      color: $white;
+      color: $black;
       margin: 0 auto;
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 20px;
     }
     &__precio__last{
-      color: $white;
+      color: $black;
       margin: 0 auto;
       font-size: 18px;
       font-weight: 600;
@@ -53,20 +53,20 @@
     &__division{
       height: 2px;
       width: 250px;
-      background-color: #fff;
+      background-color: $black;
       margin: 0 auto 20px; 
       margin-bottom: 20px;
     }
   }
   &__button{
-    background-color: white;
+    background-color: $black;
     padding: 9px 9px;
     border: none;
     border-radius: 10px;
     display: block;
     margin: 0 auto 30px;
     & a{
-      color: #6D6F6B;
+      color: $white;
       text-decoration: none;
       font-size: 20px;
     }
@@ -74,8 +74,9 @@
   &__importante{ 
     width: 300px;
     margin: 0 auto;
-    color: #fff;
+    color: $black;
     font-size: 16px; 
+    font-weight: 400;
     margin-bottom: 30px;
     &__item{
       margin-top: 5px;
@@ -86,11 +87,46 @@
         height: 7px;
         border-radius: 50%;
         margin: 8px 8px 0 5px;
-        background-color: #fff;
+        background-color: $black;
       }
       &__text{
         width: 290px;
+        font-weight: 400;
       }
     }
   }
+}
+
+
+@media screen and (min-width: 1000px){
+  .title{
+    font-size: 40px;
+  }
+  .tarifas{
+    &__container{
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+
+    }
+    &__box{
+      justify-content: center;
+      margin: 0 7px;
+      width: 300px;
+    }
+    &__importante{
+      width: 800px;
+      &__item__text{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .tarifas{
+  &__importante{
+    width: 1050px;
+  }
+}
 }

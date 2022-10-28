@@ -2,30 +2,36 @@
 
 
 .title{
-  margin-top: 30px;
+  padding-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 30px;
-  color: $white;
+  color: $black;
   font-weight: bold;
+  
 }
 
 .subTitle{
-  margin-top: 20px;
   text-align: center;
   font-size: 18px;
   line-height: 22px;
-  color: $white;
+  color: $black;
   font-weight: 600;
 }
 
 .text{
   font-size: 18px;
-  color: $white;
-  width: 350px;
+  color: $black;
+  width: 325px;
   margin: 20px auto 0;
+  font-weight: 400;
   &:last-child{
     margin-bottom: 20px;
   }
+}
+
+.bold{
+  font-weight: 600;
 }
 
 .img{
@@ -41,24 +47,23 @@
 .modalidad{
   background-color: $darkGray;
   width: 260px;
-  // height: 130px;
   margin: 40px auto 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
+
   &__title{
     text-align: center;
     font-size: 20px;
     line-height: 20px;
-    color: $white;
+    color: $black;
     font-weight: bold;
   }
   &__text{
     font-size: 18px;
     padding-top: 10px;
-    color: $white;
-    // width: 275px;
+    color: $black;
+    font-weight: 400;
     text-align: center;
     margin: 0 auto;
   }  
@@ -69,7 +74,84 @@
   text-align: center;
   font-size: 20px;
   line-height: 22px;
-  color: $white;
+  color: $black;
   font-weight: 600;
 }
 
+@media screen and (min-width: 700px){
+  .text{
+    font-size: 18px;
+    color: $black;
+    width: 600px;
+    margin: 20px auto 0;
+  }
+  .modalidad{
+    width: 260px;
+   &__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto;
+   }
+   &__text__marginTop{
+    margin-top: 10px;
+   }
+  }
+
+}
+@media screen and (min-width: 900px){
+  .modalidad{
+    width: 310px;
+    height: 130px;
+    &__container{
+      max-width: 800px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .title{
+    font-size: 40px;
+  }
+  .desktop__container{ 
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container__reverse{
+    flex-direction: row-reverse;
+    width: 1000px;
+    padding-right: 30px;
+  }
+
+  .desktop__container__text{
+    width: 400px;
+  }
+  .text{
+    width:100%;
+    font-size: 16px;
+    margin: 0;
+  }
+  .img{
+    margin: 0;
+    max-width: 400px;
+  }
+
+  .img_horizontal{
+    margin: 0;
+    max-width: 500px;
+  }
+
+  .subTitle2 br{
+    display: none;
+  }
+  .width{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+    line-height: 24px;
+  }
+}
