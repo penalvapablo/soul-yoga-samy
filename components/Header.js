@@ -13,7 +13,6 @@ import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false)
-  console.log(mobileNav)
   const mobileNavFn = () => {
     setMobileNav(!mobileNav)
   }
@@ -29,12 +28,11 @@ const Header = () => {
         <MobileNav mobileNavFn={mobileNavFn} />
       </div>
 
-      <div className={styles.bg_image_mobile_container}>
-        <Image src={bgMobile} alt='Samy Yoga' layout='fill' objectFit='cover' objectPosition='45% 55%' quality={100} />
-      </div>
-      <div className={styles.bg_image_desktop_container}>
-        <Image src={bgDesktop} alt='Samy Yoga' layout='fill' objectFit='cover' quality={100} />
-      </div>
+
+      <Image src={bgMobile} alt='Samy Yoga' layout='fill' objectFit='cover' objectPosition='45% 55%' quality={100} className={styles.bg_image_mobile_container} />
+
+      <Image src={bgDesktop} alt='Samy Yoga' layout='fill' objectFit='cover' quality={100} className={styles.bg_image_desktop_container} />
+
       <div className={styles.top}>
         <button className={styles.burgerBtn} onClick={mobileNavFn}>
           <FontAwesomeIcon icon={faBars} className={styles.burger} />
