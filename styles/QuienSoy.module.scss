@@ -2,7 +2,7 @@
 
 
 .title{
-  padding-top: 100px;
+  padding-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 30px;
@@ -34,7 +34,9 @@
 }
 
 @media screen and (min-width: 1200px){
+  
   .title{
+    padding-top: 100px;
     font-size: 40px;
   }
   .desktop__container{ 

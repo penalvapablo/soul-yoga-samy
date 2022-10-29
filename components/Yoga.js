@@ -6,7 +6,7 @@ import Yoga2 from '../public/yoga3.jpg'
 const Yoga = () => {
   return (
     <section id="Yoga" className={styles.section}>
-      <h1 className={styles.title}>Estilos de Yoga que enseño</h1>
+      <h1 className={`${styles.title} ${styles.padding}`}>Estilos de Yoga que enseño</h1>
       <h3 className={styles.subTitle}>Clases presenciales y online <br /> para principiantes</h3>
       <div className={styles.desktop__container}>
         <div className={styles.desktop__container__text}>

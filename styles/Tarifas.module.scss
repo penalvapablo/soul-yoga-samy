@@ -1,7 +1,7 @@
 @import 'colors';
 
 .title{
-  padding-top: 90px;
+  padding-top: 30px;
   text-align: center;
   font-size: 30px;
   color: $black;
@@ -100,6 +100,7 @@
 
 @media screen and (min-width: 1000px){
   .title{
+    padding-top: 90px;
     font-size: 40px;
   }
   .tarifas{
