@@ -4,10 +4,6 @@ import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 
 const Contacto = () => {
-
-
-
-
   return (
     <>
       <footer id='Contacto'>

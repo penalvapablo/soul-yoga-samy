@@ -5,7 +5,7 @@ import styles from '../styles/Header.module.scss'
 import MobileNav from './MobileNav'
 import logo from '../public/Logo-mobile.png'
 import bgMobile from '../public/hero2.png'
-import bgDesktop from '../public/Desktop-bg.png'
+import bgDesktop from '../public/Desktop-bg2.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
@@ -23,9 +23,9 @@ const Header = () => {
 
   return (
 
-    <header className={styles.header}>
-      <div className={`${styles.mobileNav__container} ${mobileNav && styles.mobileNav__container__active}`}>
-        <MobileNav mobileNavFn={mobileNavFn} />
+    <header id='Home' className={styles.header}>
+      <div className={`${styles.mobileNav__container}`}>
+        <MobileNav mobileNavFn={mobileNavFn} mobileNavState={mobileNav} />
       </div>
 
 

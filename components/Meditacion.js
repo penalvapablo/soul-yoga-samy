@@ -4,7 +4,7 @@ import styles from '../styles/Meditacion.module.scss'
 
 const Meditacion = () => {
   return (
-    <section id="Meditacion">
+    <section id="Meditacion" className={styles.meditacion}>
       <div className={styles.desktop__container}>
         <div className={styles.desktop__container__half}>
           <h1 className={styles.title}>Meditacion</h1>

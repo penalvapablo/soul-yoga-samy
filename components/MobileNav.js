@@ -5,11 +5,11 @@ import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link'
 
 
-const MobileNav = ({ mobileNavFn }) => {
+const MobileNav = ({ mobileNavFn, mobileNavState }) => {
   return (
     <>
 
-      <nav className={styles.nav}>
+      <nav className={`${styles.nav} ${mobileNavState && styles.nav__active}`}>
         <FontAwesomeIcon icon={faXmark} onClick={mobileNavFn} className={styles.nav__close} />
         <ul className={styles.nav__list}>
           <li><Link href={'#Home'}><a onClick={mobileNavFn}>Home</a></Link></li>

@@ -1,5 +1,9 @@
 @import 'colors';
 
+.meditacion{
+  padding-top: 90px;
+}
+
 .title{
   padding-top: 30px;
   text-align: center;
@@ -39,6 +43,7 @@
     margin-top: 40px;
   }
   .desktop__container{
+
     display: flex;
     width: 1000px;
     margin: 0 auto;
