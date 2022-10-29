@@ -7,7 +7,6 @@ import logo from '../public/logo-mobile.png'
 import bgMobile from '../public/hero2.png'
 import bgDesktop from '../public/Desktop-bg.png'
 import Image from 'next/image'
-import { RemoveScroll } from 'react-remove-scroll';
 import Link from 'next/link'
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
@@ -45,13 +44,13 @@ const Header = () => {
         </div>
         <nav className={styles.nav}>
           <ul className={styles.nav__list}>
-            <li><Link href={'#Home'}><a onClick={mobileNavFn}>Home</a></Link></li>
-            <li><Link href={'#QuienSoy'}><a onClick={mobileNavFn}>Quien Soy</a></Link></li>
-            <li><Link href={'#Yoga'}><a onClick={mobileNavFn}>Yoga</a></Link></li>
-            <li><Link href={'#Horarios'}><a onClick={mobileNavFn}>Horarios</a></Link></li>
-            <li><Link href={'#Tarifas'}><a onClick={mobileNavFn}>Tarifas</a></Link></li>
-            <li><Link href={'#Meditacion'}><a onClick={mobileNavFn}>Meditación</a></Link></li>
-            <li><Link href={'#Contacto'}><a onClick={mobileNavFn}>Contacto</a></Link></li>
+            <li><Link href={'#Home'}><a >Home</a></Link></li>
+            <li><Link href={'#QuienSoy'}><a >Quien Soy</a></Link></li>
+            <li><Link href={'#Yoga'}><a >Yoga</a></Link></li>
+            <li><Link href={'#Horarios'}><a >Horarios</a></Link></li>
+            <li><Link href={'#Tarifas'}><a >Tarifas</a></Link></li>
+            <li><Link href={'#Meditacion'}><a >Meditación</a></Link></li>
+            <li><Link href={'#Contacto'}><a >Contacto</a></Link></li>
             <div className={styles.nav__socialLinks}>
               <a href='https://wa.link/ugftpv' rel='noreferrer' target="_blank">
                 <FontAwesomeIcon icon={faWhatsapp} className={styles.nav__socialLinks__item} />
