@@ -1,18 +1,18 @@
 import styles from '../styles/Contacto.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+
 
 const Contacto = () => {
 
-  const { } = useLoadScript({ googleMapsApiKey: "" })
+
 
 
   return (
     <>
       <footer id='Contacto'>
         <div className={styles.contacto__container}>
-          <div className={styles.mapouter}><div className={styles.gmap_canvas}><iframe width="325" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=concordia%204,%20valencia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginWidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br />
+          <div className={styles.mapouter}><div className={styles.gmap_canvas}><iframe width="325" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=concordia%204,%20valencia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br />
             <a href="https://www.embedgooglemap.net"></a></div></div>
 
           <div className={styles.contacto__info__container}>

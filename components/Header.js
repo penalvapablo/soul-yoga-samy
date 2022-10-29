@@ -38,7 +38,7 @@ const Header = () => {
           <FontAwesomeIcon icon={faBars} className={styles.burger} />
         </button>
         <div className={styles.logoContainer}>
-          <Image src={logo} alt='logo' layout='responsive' />
+          <Image src={logo} alt='logo' layout='responsive' priority />
         </div>
         <nav className={styles.nav}>
           <ul className={styles.nav__list}>
