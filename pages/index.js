@@ -12,10 +12,10 @@ import { useState } from 'react'
 
 export default function Home() {
   return (
-    <div onS >
+    <div>
       <Head>
-        <title>Soul Yoga Samy</title>
-        <meta name="description" content="clases de yoga presenciales y online para principiantes" />
+        <title>Soul Yoga Samy - Clases de yoga presenciales y online - Valencia</title>
+        <meta name="description" content="Clases de yoga presenciales y online para principiantes - Valencia" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
