@@ -9,22 +9,26 @@ const Horarios = () => {
 
 
         <h3 className={styles.horarios__mobile__dia}>Lunes</h3>
-        <p className={styles.horarios__mobile__yoga}>Vinyasa suave - 10:30</p>
-        <p className={styles.horarios__mobile__yoga}>Yin yoga 19:30</p>
+        <p className={styles.horarios__mobile__yoga}>Vinyasa suave - 12:00</p>
+        <p className={styles.horarios__mobile__yoga}>Yin yoga - 14:00</p>
         <div className={styles.horarios__mobile__division}></div>
         <h3 className={styles.horarios__mobile__dia}>Martes</h3>
-        <p className={styles.horarios__mobile__yoga}>Vinyasa suave - 14:00</p>
+        <p className={styles.horarios__mobile__yoga}>Yin yoga - 14:30</p>
         <div className={styles.horarios__mobile__division}></div>
         <h3 className={styles.horarios__mobile__dia}>Miércoles</h3>
-        <p className={styles.horarios__mobile__yoga}>Yin yoga 10:30</p>
-        <p className={styles.horarios__mobile__yoga}>Yin yoga 19:30</p>
+        <p className={styles.horarios__mobile__yoga}>Vinyasa suave - 12:00</p>
+        <p className={styles.horarios__mobile__yoga}>Yin yoga - 14:00</p>
         <div className={styles.horarios__mobile__division}></div>
         <h3 className={styles.horarios__mobile__dia}>Jueves</h3>
-        <p className={styles.horarios__mobile__yoga}>Vinyasa suave - 14:00</p>
+        <p className={styles.horarios__mobile__yoga}>Yin yoga - 14:30</p>
         <div className={styles.horarios__mobile__division}></div>
         <h3 className={styles.horarios__mobile__dia}>Viernes</h3>
-        <p className={styles.horarios__mobile__yoga}>Vinyasa suave - 10:30</p>
-        <p className={styles.horarios__mobile__yoga}>Yin yoga 18:30  </p>
+        <p className={styles.horarios__mobile__yoga}>Yin yoga - 14:00  </p>
+        <p className={styles.horarios__mobile__yoga}>Vinyasa suave - 16:00</p>
+        <div className={styles.horarios__mobile__division}></div>
+        <h3 className={styles.horarios__mobile__dia}>Sábados</h3>
+        <p className={styles.horarios__mobile__yoga}>Vinyasa suave - 12:00</p>
+        <p className={styles.horarios__mobile__yoga}>Yin yoga - 14:00  </p>
       </div>
       <div className={styles.horarios__desktop__container}>
         <table className={styles.horarios__desktop}>
@@ -35,25 +39,17 @@ const Horarios = () => {
               <th className={styles.horarios__desktop__th} scope="col">Miércoles</th>
               <th className={styles.horarios__desktop__th} scope="col">Jueves</th>
               <th className={styles.horarios__desktop__th} scope="col">Viernes</th>
+              <th className={styles.horarios__desktop__th} scope="col">Sábados</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td valign='middle' className={styles.horarios__desktop__box}>Vinyasa suave<br />10:30</td>
+              <td className={styles.horarios__desktop__box}>Vinyasa suave<br />12:00</td>
               <td className={styles.horarios__desktop__box}></td>
-              <td className={styles.horarios__desktop__box}>Yin yoga<br />10:30</td>
+              <td className={styles.horarios__desktop__box}>Vinyasa suave<br />12:00</td>
               <td className={styles.horarios__desktop__box}></td>
-              <td className={styles.horarios__desktop__box}>Vinyasa suave<br />10:30</td>
-
-            </tr>
-            <tr>
-
               <td className={styles.horarios__desktop__box}></td>
-              <td className={styles.horarios__desktop__box}>Vinyasa suave<br />14:00</td>
-              <td className={styles.horarios__desktop__box}></td>
-              <td className={styles.horarios__desktop__box}>Vinyasa suave<br />14:00</td>
-              <td className={styles.horarios__desktop__box}></td>
-
+              <td className={styles.horarios__desktop__box}>Vinyasa suave<br />12:00</td>
             </tr>
             <tr>
 
@@ -61,15 +57,34 @@ const Horarios = () => {
               <td className={styles.horarios__desktop__box}></td>
               <td className={styles.horarios__desktop__box}></td>
               <td className={styles.horarios__desktop__box}></td>
-              <td className={styles.horarios__desktop__box}>Yin yoga<br />18:30</td>
+              <td className={styles.horarios__desktop__box}></td>
+              <td className={styles.horarios__desktop__box}>Yin yoga<br />14:00</td>
 
             </tr>
             <tr>
 
-              <td className={styles.horarios__desktop__box}>Yin yoga<br />19:30</td>
+              <td className={styles.horarios__desktop__box}>Yin yoga<br />14:00</td>
               <td className={styles.horarios__desktop__box}></td>
-              <td className={styles.horarios__desktop__box}>Yin yoga<br />19:30</td>
+              <td className={styles.horarios__desktop__box}>Yin yoga<br />14:00</td>
               <td className={styles.horarios__desktop__box}></td>
+              <td className={styles.horarios__desktop__box}>Yin yoga<br />14:00</td>
+              <td className={styles.horarios__desktop__box}></td>
+            </tr>
+            <tr>
+              <td className={styles.horarios__desktop__box}></td>
+              <td className={styles.horarios__desktop__box}>Yin yoga<br />14:30</td>
+              <td className={styles.horarios__desktop__box}></td>
+              <td className={styles.horarios__desktop__box}>Yin yoga<br />14:30</td>
+              <td className={styles.horarios__desktop__box}></td>
+              <td className={styles.horarios__desktop__box}></td>
+
+            </tr>
+            <tr>
+              <td className={styles.horarios__desktop__box}></td>
+              <td className={styles.horarios__desktop__box}></td>
+              <td className={styles.horarios__desktop__box}></td>
+              <td className={styles.horarios__desktop__box}></td>
+              <td className={styles.horarios__desktop__box}>Vinyasa suave<br />12:00</td>
               <td className={styles.horarios__desktop__box}></td>
 
             </tr>

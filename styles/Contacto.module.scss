@@ -16,9 +16,12 @@
   justify-content: space-between;
   margin: 20px auto 0;
   font-size: 50px;
-  color: $black;
   & a {
     color: $black;
+    transition: all .3s;
+    &:hover{
+      color: $white;
+    }
   }
 }
 

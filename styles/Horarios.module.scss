@@ -96,7 +96,7 @@
   }
   .horarios__desktop{
     display: block;
-    border-spacing: 25px;
+    border-spacing: 10px;
     border-collapse: separate;
   }
   .horarios__desktop__th{
@@ -106,8 +106,8 @@
   }
   .horarios__desktop__box{
     background-color: $darkGray;
-    width: 220px;
-    height: 90px;
+    width: 180px;
+    height: 80px;
     text-align: center;
     vertical-align: middle;
     font-size: 20px;

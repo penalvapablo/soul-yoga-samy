@@ -37,7 +37,7 @@ const Tarifas = () => {
         </div>
       </div>
       <button className={styles.tarifas__button}>
-        <a href=''>Reserva tu plaza por whatsapp</a>
+        <a href='https://wa.link/ugftpv' rel='noreferrer' target="_blank">Reserva tu plaza por whatsapp</a>
       </button>
       <div className={styles.tarifas__importante}>
         <h4 className={styles.tarifas__importante__title}>Importante:</h4>

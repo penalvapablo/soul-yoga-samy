@@ -65,7 +65,7 @@ const Header = () => {
           Bienvenida
         </p>
         <h1 className={styles.text}>
-          Clase de yoga <br /> presenciales y online
+          Clase de yoga <br /> presencial y online
         </h1>
         <p className={styles.text__desktop}>El yoga es la oportunidad perfecta <br /> para ser curioso sobre quien eres</p>
         <p className={styles.text__desktop}>J. Crandell</p>
