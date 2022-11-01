@@ -31,7 +31,7 @@ const Header = () => {
 
       <Image src={bgMobile} alt='Samy Yoga' layout='fill' objectFit='cover' objectPosition='45% 55%' quality={100} className={styles.bg_image_mobile_container} />
 
-      <Image src={bgDesktop} placeholder='blur' alt='Samy Yoga' layout='fill' objectFit='cover' quality={100} className={styles.bg_image_desktop_container} />
+      <Image src={bgDesktop} priority alt='Samy Yoga' layout='fill' objectFit='cover' quality={100} className={styles.bg_image_desktop_container} />
 
       <div className={styles.top}>
         <button className={styles.burgerBtn} onClick={mobileNavFn}>
