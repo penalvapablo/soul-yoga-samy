@@ -11,7 +11,7 @@ const Yoga = () => {
       <div className={styles.desktop__container}>
         <div className={styles.desktop__container__text}>
           <h1 className={styles.title}>Vinyasa Suave</h1>
-          <p className={styles.text}>Es un estilo dinámico suave donde se coordina la respiración y el movimiento para fluir entre una postura de yoga con la otra. El yoga se convierte en una meditación en movimiento.<br /> El ritmo es más lento, se practican menos posturas y se le exige menos al cuerpo para ir lentamente creando espacio, liberando tensiones y relajando.
+          <p className={styles.text}>Es un estilo dinámico suave donde se coordina la respiración y el movimiento para fluir entre una postura de yoga con la otra. El yoga se convierte en una meditación en movimiento.<br /> <br /> El ritmo es más lento, se practican menos posturas y se le exige menos al cuerpo para ir lentamente creando espacio, liberando tensiones y relajando.
           </p>
         </div>
         <div className={`${styles.img} ${styles.img_horizontal}`}>
@@ -21,7 +21,7 @@ const Yoga = () => {
       <div className={`${styles.desktop__container} ${styles.container__reverse}`}>
         <div className={styles.desktop__container__text}>
           <h1 className={styles.title}>Yin Yoga</h1>
-          <p className={`${styles.text} ${styles.padding_right}`}>Es un estilo de yoga de ritmo lento con posturas que se mantienen durante un tiempo suele ser entre uno a cinco minutos. Las posturas del Yin Yoga aplican un estrés moderado a los tejidos conectivos del cuerpo con el objetivo de aumentar la circulación en las articulaciones, mejorar la flexibilidad y armoniza todo el cuerpo energético. Su desafío es mantenerse en la postura teniendo en cuenta la anatomía de cada persona.
+          <p className={`${styles.text} ${styles.padding_right}`}>Es un estilo de yoga de ritmo lento con posturas que se mantienen durante un tiempo suele ser entre uno a cinco minutos.<br /> <br /> Las posturas del Yin Yoga aplican un estrés moderado a los tejidos conectivos del cuerpo con el objetivo de aumentar la circulación en las articulaciones, mejorar la flexibilidad y armoniza todo el cuerpo energético.<br /> <br /> Su desafío es mantenerse en la postura teniendo en cuenta la anatomía de cada persona.
           </p>
         </div>
         <div className={styles.img}>
@@ -50,7 +50,7 @@ const Yoga = () => {
         </div>
       </div>
       <h3 className={styles.subTitle2}>¿Qué resultados conseguirás <br /> con mis clases?</h3>
-      <p className={`${styles.text} ${styles.width}`}>Te sentirás con las <b className={styles.bold}> energías renovadas, conectada</b> contigo misma y en <b className={styles.bold}>calma</b>.<br />A nivel físico tendrás menos rigidez, sentirás menos contracturas musculares en el cuello y espalda al pasar tantas horas sentadas enfrente del ordenador.<br />Además ganarás poco a poco <b className={styles.bold}>flexibilidad</b> y así podrás expandir tu cuerpo y podrás gestionar mejor tus estados de <b className={styles.bold}>ansiedad o estrés</b> incluso tus <b className={styles.bold}>emociones</b>.</p>
+      <p className={`${styles.text} ${styles.width}`}>Te sentirás con las <b className={styles.bold}> energías renovadas, conectada</b> contigo misma y en <b className={styles.bold}>calma</b>.<br /><br />A nivel físico tendrás menos rigidez, sentirás menos contracturas musculares en el cuello y espalda al pasar tantas horas sentadas enfrente del ordenador.<br /><br />Además ganarás poco a poco <b className={styles.bold}>flexibilidad</b> y así podrás expandir tu cuerpo y podrás gestionar mejor tus estados de <b className={styles.bold}>ansiedad o estrés</b> incluso tus <b className={styles.bold}>emociones</b>.</p>
     </section >
   )
 }
