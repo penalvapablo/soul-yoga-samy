@@ -15,6 +15,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Soul Yoga Samy - Clases de yoga presenciales y online - Valencia</title>
+        <meta name="google-site-verification" content="r7UN1LI2c85X8vdJ67SWIYyxXpXSGxJAbQMX7S_Eetc" />
         <meta name="description" content="Clases de yoga presenciales y online para principiantes - Valencia" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
