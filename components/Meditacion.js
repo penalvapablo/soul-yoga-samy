@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Samy from '../public/Med.jpeg'
+import Samy from '../public/img/med.jpg'
 import styles from '../styles/Meditacion.module.scss'
 
 const Meditacion = () => {

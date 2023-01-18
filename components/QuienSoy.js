@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Samy from '../public/yoga.jpeg'
+import Samy from '../public/img/About.jpg'
 import styles from '../styles/QuienSoy.module.scss'
 
 const QuienSoy = () => {

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styles from '../styles/Yoga.module.scss'
-import Yoga1 from '../public/yoga2.jpeg'
-import Yoga2 from '../public/yoga3.jpg'
+import Yoga1 from '../public/img/vinyasa.jpg'
+import Yoga2 from '../public/img/yin.jpg'
 
 const Yoga = () => {
   return (
